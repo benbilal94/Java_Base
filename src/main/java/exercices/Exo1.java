@@ -2,10 +2,9 @@ package exercices;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.Date;
 import java.util.Scanner;
 
-public class exo1 {
+public class Exo1 {
     public static void main(String[] args) {
 
 //        exo :
