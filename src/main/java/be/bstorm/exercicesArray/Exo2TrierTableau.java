@@ -1,4 +1,4 @@
-package exercicesArray;
+package be.bstorm.exercicesArray;
 
 import java.util.Arrays;
 
