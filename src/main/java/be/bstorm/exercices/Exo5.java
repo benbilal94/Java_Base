@@ -1,4 +1,4 @@
-package exercices;
+package be.bstorm.exercices;
 
 //        Exercice 5:
 //        L'utilisateur entre une valeur en seconde, convertir cette valeur en jour , heure, minute seconde

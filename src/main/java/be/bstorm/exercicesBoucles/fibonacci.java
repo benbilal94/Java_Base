@@ -1,4 +1,4 @@
-package exercicesBoucles;
+package be.bstorm.exercicesBoucles;
 
 public class fibonacci {
 //    Exercice 9:

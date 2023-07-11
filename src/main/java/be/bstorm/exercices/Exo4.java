@@ -1,4 +1,4 @@
-package exercices;
+package be.bstorm.exercices;
 
 import java.util.Scanner;
 
