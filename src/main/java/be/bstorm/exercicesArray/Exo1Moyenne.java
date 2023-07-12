@@ -1,7 +1,6 @@
 package be.bstorm.exercicesArray;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Exo1Moyenne {
@@ -10,19 +9,32 @@ public class Exo1Moyenne {
 //        Ecrire un programme qui demande a l'utilisateur de rentrer les scores de x personnes (max 10)
 //        Calculer la moyenne de ces scores.
 
-        Scanner s = new Scanner(System.in);
-        List<Integer> scores = new ArrayList<>();
+        Scanner scan = new Scanner(System.in);
 
+        int[] scores = new int[10];
+        System.out.print("Nombre de joueur : ");
+        int nbJoueur = scan.nextInt();
 
-        for (int i = 0; i < 10 ; i++) {
-            System.out.println("Entrez le scores");
-            scores.add(s.nextInt());
+        for (int i = 0; i < nbJoueur; i++) {
+
+            System.out.print("Joueur " + (i + 1) + " : ");
+            scores[i] = scan.nextInt();
         }
-        float sum = 0;
-        for (Integer score: scores){
-            sum = sum + score;
+
+        int somme = 0;
+        for (int i = 0; i < nbJoueur; i++) {
+
+            somme += scores[i];
+//            somme = somme + scores[i];
         }
-        System.out.println(sum);
-        System.out.println( sum / scores.size());
+
+//        for(int score : scores){
+//
+//            somme += score;
+//        }
+
+        float moyenne = (float) somme / nbJoueur;
+
+        System.out.println("Moyenne => " + moyenne);
     }
 }
